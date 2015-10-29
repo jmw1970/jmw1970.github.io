@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 ## Convert RHEL 6 to Oracle Linux 6
 
