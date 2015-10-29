@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[jonathan@krucial.co.uk](mailto:jonathan@krucial.co.uk)
+[j_m_whitehead@yahoo.co.uk](mailto:j_m_whitehead@yahoo.co.uk)
