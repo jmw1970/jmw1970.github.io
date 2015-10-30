@@ -1,7 +1,7 @@
 ---
 title: Convert RHEL 6 to Oracle Linux 6
 layout: post
-tags: personal
+tags: linux
 ---
 
 Before we started to use Oracle Linux for running our Oracle installations on we had created a few RHEL hosts, I've been wanting to switch them from Redhat to Oracle Linux but never found the time as I imagined I would have to re-install the OS from scratch.

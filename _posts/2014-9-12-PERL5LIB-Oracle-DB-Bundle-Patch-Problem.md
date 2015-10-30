@@ -1,4 +1,8 @@
-PERL5LIB problem when applying Oracle Database Version 12.1.0.1.13 Bundle Patch
+---
+title: PERL5LIB problem when applying Oracle Database Version 12.1.0.1.13 Bundle Patch
+layout: post
+tags: oracle, windows
+---
 
 Small issue when applying BP 12.1.0.1.13 on a windows host.
 

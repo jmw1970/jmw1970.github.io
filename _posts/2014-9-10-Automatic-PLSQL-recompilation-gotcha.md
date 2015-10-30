@@ -1,4 +1,8 @@
-Wednesday, 10 September 2014
+---
+title: Gotcha on automatic PL/SQL recompilation
+layout: post
+tags: oracle, plsql
+---
 
 Gotcha on automatic PL/SQL recompilation
 
