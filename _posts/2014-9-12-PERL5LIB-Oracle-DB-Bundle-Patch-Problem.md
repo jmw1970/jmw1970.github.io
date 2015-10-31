@@ -12,6 +12,6 @@ I found this to be the case as a previous installation of the OEM agent12c had s
 
 The workaround is to unset the environment variable in the command window :
 
-set PERL5LIB=
+`set PERL5LIB=`
 
 and then the datapatch execution should run without a hitch.
