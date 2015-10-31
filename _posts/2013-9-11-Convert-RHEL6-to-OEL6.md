@@ -8,7 +8,7 @@ Before we started to use Oracle Linux for running our Oracle installations on we
 
 I discovered that this isn't the case after a bit of internet research. Oracle does tout an easy way to switch but that involves having a valid ULN support contract which we don't have, however there is a method of switching without one it's just not very well documented.
 
-Using the notes http://public-yum.oracle.com/ as a guide I formulated the following steps :
+Using the notes [Here](http://public-yum.oracle.com/) as a guide I formulated the following steps :
 
 1) Get the PGP key for ol6
 
