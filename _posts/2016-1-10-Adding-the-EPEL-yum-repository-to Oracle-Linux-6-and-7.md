@@ -4,7 +4,7 @@ layout: post
 tags: Linux EPEL
 ---
 
-There are some useful utility programs available in the Fedora Extra Packages for Enterprise Linux (EPEl) project ( https://fedoraproject.org/wiki/EPEL ), two packages I particularly find useful and always install are htop and rlwrap.
+There are some useful utility programs available in the [Fedora Extra Packages for Enterprise Linux (EPEL) project]( https://fedoraproject.org/wiki/EPEL ), two packages I particularly find useful and always install are htop and rlwrap.
 
 However the EPEL isn't automatically setup on OEL so to add it do the following :
 
