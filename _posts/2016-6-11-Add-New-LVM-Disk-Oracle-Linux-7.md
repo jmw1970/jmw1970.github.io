@@ -10,27 +10,36 @@ Click storage for the VM and add a new disk to the controller, either create a n
 
 Start the VM and check the new disk is visible using fdisk -l and then create a new partition on it. In this example I'm adding a new disk sdb to an existing volume group ol.
 
+```
 fdisk /dev/sdb
 
 n 1 return t 1 8e w
 
 pvcreate /dev/sdb1
+```
 
 Add the new physical volume to an existing volume group
 
+```
 vgextend ol /dev/sdb1
+```
 
 Create a new logical volume in the ol volume group
 
+```
 lvcreate -L 100G -n newvol2 ol
+```
 
 Create a file system on the new volume :
 
+```
 mkfs.xfs /dev/ol/newvol2
+```
 
 Add a entry to /etc/fstab for the new volume and mount point
-
- vi /etc/fstab
+```
+vi /etc/fstab
+```
 
 add
 
@@ -38,5 +47,7 @@ add
 
 create the directory /newvol for the mount point and mount the volume :
 
- mkdir /newvol
- mount /newvol
+```
+mkdir /newvol
+mount /newvol
+````
