@@ -16,10 +16,10 @@ Using the notes [Here](http://public-yum.oracle.com/) as a guide I formulated th
 
 2. Get the OL6 repo
 
-   ```shell
-   cd /etc/yum.repos.d
-   wget https://public-yum.oracle.com/public-yum-ol6.repo
-   ```
+```sh
+cd /etc/yum.repos.d
+wget https://public-yum.oracle.com/public-yum-ol6.repo
+```
 
 3. Rename the rhel-source.repo in /etc/yum.repos.d
 
