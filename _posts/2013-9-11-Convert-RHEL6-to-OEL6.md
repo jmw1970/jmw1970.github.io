@@ -10,11 +10,9 @@ I discovered that this isn't the case after a bit of internet research. Oracle d
 
 Using the notes [Here](http://public-yum.oracle.com/) as a guide I formulated the following steps :
 
-1. Get the PGP key for ol6
+1. Get the PGP key for ol6:
 
-   ```shell
-   wget https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6 -O /etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
-   ```
+    wget https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6 -O /etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
 
 2. Get the OL6 repo
 
