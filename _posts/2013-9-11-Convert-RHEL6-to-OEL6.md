@@ -14,52 +14,38 @@ Using the notes [Here](http://public-yum.oracle.com/) as a guide I formulated th
 
     wget https://public-yum.oracle.com/RPM-GPG-KEY-oracle-ol6 -O /etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
 
-2. Get the OL6 repo
+2. Get the OL6 repo:
 
-```sh
-cd /etc/yum.repos.d
-wget https://public-yum.oracle.com/public-yum-ol6.repo
-```
+    cd /etc/yum.repos.d
+    wget https://public-yum.oracle.com/public-yum-ol6.repo
 
-3. Rename the rhel-source.repo in /etc/yum.repos.d
+3. Rename the rhel-source.repo in /etc/yum.repos.d:
 
-   ```shell
-   mv rhel-source.repo rhel-source.repoold
-   ```
+    mv rhel-source.repo rhel-source.repoold
 
 4. Disable the presto and rhnplugin plugins by setting the enabled flag to 0 in :
 
-   ```shell
-   vi /etc/yum/pluginconf.d/presto.conf
-   vi /etc/yum/pluginconf.d/rhnplugin.conf
-   ```
+    vi /etc/yum/pluginconf.d/presto.conf
+    vi /etc/yum/pluginconf.d/rhnplugin.conf
 
-5. Have to remove the libreport.x86_64 package as this will cause the process to fail, it doesn't exist on the other OL6 hosts so should be safe to remove.
+5. Have to remove the libreport.x86_64 package as this will cause the process to fail, it doesn't exist on the other OL6 hosts so should be safe to remove:
 
-   ```shell
-   yum erase libreport
-   ```
+    yum erase libreport
 
-6. Test with yum list updates, it should run and return a list of packages if the changes have been successful then do a yum upgrade. If the yum list updates fails do a yum clean all to delete any existing yum information and do the yum list updates again.
+6. Test with yum list updates, it should run and return a list of packages if the changes have been successful then do a yum upgrade. If the yum list updates fails do a yum clean all to delete any existing yum information and do the yum list updates again
 
-7. Remove the file public-yum-ol6.repo-disabled from /etc/yum.repo.d and rename the file public-yum-ol6.repo.rpmnew to public-yum-ol6.repo
+7. Remove the file public-yum-ol6.repo-disabled from /etc/yum.repo.d and rename the file public-yum-ol6.repo.rpmnew to public-yum-ol6.repo:
 
-   ```shell
-   rm /etc/yum.repos.d/public-yum-ol6.repo-disabled
-   mv /etc/yum.repos.d/public-yum-ol6.repo.rpmnew /etc/yum.repos.d/public-yum-ol6.repo
-   ```
+    rm /etc/yum.repos.d/public-yum-ol6.repo-disabled
+    mv /etc/yum.repos.d/public-yum-ol6.repo.rpmnew /etc/yum.repos.d/public-yum-ol6.repo
 
-8. Install the Unbreakable Kernel.
+8. Install the Unbreakable Kernel:
 
-   ```shell
-   yum install kernel-uek kernel-uek-devel
-   ```
+    yum install kernel-uek kernel-uek-devel
 
-9. Edit grub.conf to use unbreakable kernel.
+9. Edit grub.conf to use unbreakable kernel:
 
-   ```shell
-   vi /boot/grub/grub.conf
-   ```
+    vi /boot/grub/grub.conf
 
    change default to 0
 
